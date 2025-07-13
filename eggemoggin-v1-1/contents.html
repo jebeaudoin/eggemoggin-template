@@ -1,0 +1,43 @@
+{{> header}}
+
+
+
+
+
+  <div style="min-height:6rem;flex-direction:row;align-items:center" class="flex mt3 pt3 mb5 ">
+    <div class="w-100">
+
+        <center>
+      <div class="pr4 pt4" ><h1>Table of Contents</h1></div>
+      <br>
+</center>
+    </div>
+      
+    </div>
+
+  <div class="entry pv0  b--black-10" >
+    
+
+    <div class="lh-copy f5 black-90" style="position:relative">
+    
+    {{> /Pages/frontmatter.md}}
+    
+    {{#allEntries}}
+    <a href="{{{url}}}">{{{title}}}</a>
+    {{/allEntries}}
+    
+    {{> /Pages/backmatter.md}}
+    
+    
+    </div>
+<style>
+.lh-copy.f5.black-90 a {display:block;color:#666;border:none;text-decoration:none}
+</style>
+
+
+<div class="cf"></div>
+
+</div>
+
+{{> footer}}
+
